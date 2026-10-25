@@ -1,8 +1,0 @@
-      - name: Upload JAR
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: VoidClient-JAR
-          path: |
-            **/build/libs/*.jar
-          if-no-files-found: error
